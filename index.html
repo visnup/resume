@@ -58,6 +58,6 @@ Java to teach game programming.
       .replace(/'/g, '&rsquo;')
       .replace(/-&gt;/g, '&rarr;')
 
-    pre.outerHTML = marked(src)
+    pre.outerHTML = '<div id="pre">' + marked(src) + '</div>'
   })(document)
 </script>
