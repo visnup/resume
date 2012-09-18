@@ -51,6 +51,15 @@ footer {
   margin-top: 2em;
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   img { display: none; }
+}
+
+@media print {
+  /* make sure to print to one page */
+  body   { box-shadow: none; }
+  #pre   { padding: 30px; }
+  img    { width: 100px; height: 100px; }
+  h1     { margin-bottom: 0; }
+  footer { display: none; }
 }
