@@ -14,7 +14,7 @@ body {
 #pre {
   max-width: 600px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 60px 20px;
   position: relative;
   color: #666;
   line-height: 150%;
@@ -49,4 +49,8 @@ footer {
   text-align: center;
   font-size: small;
   margin-top: 2em;
+}
+
+@media(max-width: 600px) {
+  img { display: none; }
 }
