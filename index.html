@@ -51,8 +51,13 @@ Java to teach game programming.
   (function(d) {
     var pre = document.body.firstChild
       , src = pre.innerHTML
+
     // smartypants-ish
-    src = src.replace(/--/g, '&mdash;').replace(/-&gt;/g, '&rarr;')
+    src = src
+      .replace(/--/g, '&mdash;')
+      .replace(/'/g, '&rsquo;')
+      .replace(/-&gt;/g, '&rarr;')
+
     pre.outerHTML = marked(src)
   })(document)
 </script>
