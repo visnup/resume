@@ -1,66 +1,56 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Visnup.com by visnup</title>
+<link rel="stylesheet" href="stylesheets/normalize.css" />
+<link rel="stylesheet" href="stylesheets/style.css" />
+<script src="javascripts/marked.js"></script>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Visnup.com</h1>
-        <p></p>
+<pre>
 
-        <p class="view"><a href="https://github.com/visnup/visnup.com">View the Project on GitHub <small>visnup/visnup.com</small></a></p>
+# <img src="https://twimg0-a.akamaihd.net/profile_images/1810244800/qr.png"/> Visnu Pitiyanuvath
 
+### [Node.js Knockout] -- Co-creator, organizer (2010 - present)
 
-        <ul>
-          <li><a href="https://github.com/visnup/visnup.com/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/visnup/visnup.com/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/visnup/visnup.com">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+Node.js Knockout is a 48-hour hackathon featuring [node.js]. It's an online,
+virtual competition with contestants worldwide. 2012 is the third year it's
+been held. [People love it][nko love].
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+### [Fortnight Labs] -- Partner (2010 - present)
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+Consulting for startups. We help early-stage startups go from ideas to actual
+released products (web or mobile) very quickly. We're comfortable researching
+and defining a minimal product all the way to building it.
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+### Swivel -- Engineer -> CEO (2006 - 2010)
 
-<h3>Designer Templates</h3>
+Swivel was an early big-data startup that made it easy to share data and
+charts. Ruby on Rails, mysql backend; JavaScript charting.
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+#### Guru -> Unicru -- Engineer (2000 - 2005)
 
-<h3>Rather Drive Stick?</h3>
+At Guru.com, worked on a resume & job matching engine in Java. After being
+acquired by Unicru, built a custom resume parser, using machine learning
+techniques (WEKA).
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+#### [Duke University] -- B.S. Electrical Engineering & Computer Science (1996-2000)
 
-<h3>Authors and Contributors</h3>
+As a post-undergraduate research fellow, co-wrote a 3D, networked game API in
+Java to teach game programming.
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<footer>Updated Sep 17, 2012</footer>
 
-<h3>Support or Contact</h3>
+[Node.js Knockout]: http://nodeknockout.com/
+[nko love]: https://twitter.com/i/#!/search/node%20knockout%20OR%20nodeknockout%20OR%20node_knockout%20OR%20nodeko
+[node.js]: http://nodejs.org/
+[Fortnight Labs]: http://fortnightlabs.com/
+[Swivel]: http://swivel.com/
+[Guru]: http://www.guru.com/
+[Duke University]: http://duke.edu/
+</pre>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/visnup">visnup</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+<script>
+  (function(d) {
+    var pre = document.body.firstChild
+      , src = pre.innerHTML
+    // smartypants-ish
+    src = src.replace(/--/g, '&mdash;').replace(/-&gt;/g, '&rarr;')
+    pre.outerHTML = marked(src)
+  })(document)
+</script>
