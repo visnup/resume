@@ -30,10 +30,12 @@ a:hover {
 }
 
 img {
-  width: 200px;
-  height: 200px;
-  margin-left: -8px;
+  width: 220px;
+  height: 220px;
   vertical-align: middle;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 h1 {
@@ -52,7 +54,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  img { display: none; }
+  img { display: block; margin: 0 auto 1em; }
 }
 
 @media print {
