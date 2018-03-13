@@ -1,23 +1,22 @@
-body {
-  font-family: Georgia;
-}
+@import 'http://fonts.googleapis.com/css?family=Headland+One';
+@import 'https://unpkg.com/normalize.css@8.0.0/normalize.css';
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Headland One;
+  font-family: 'Headland One', Georgia, serif;
   font-weight: normal;
 }
 
 body {
+  font-family: Georgia;
   box-shadow: inset 0 0 35px hsla(0, 0%, 0%, 0.1);
-}
-
-#pre {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  position: relative;
   color: #666;
   line-height: 150%;
+}
+
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 a, h1, h2, h3, h4, h5, h6 {
@@ -42,8 +41,8 @@ h1 {
   margin: 0 0 1.5em;
   text-align: center;
 }
-h3, h4 { margin: 1.5em 0 0; }
-h5 { margin: 0; }
+h2 { font-size: 1.25em; margin: 1.5em 0 0; }
+h3 { font-size: 1em; margin: 0; }
 
 p { margin: 0.5em 0; }
 
@@ -53,15 +52,15 @@ footer {
   margin-top: 2em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 48rem) {
   img { display: block; margin: 0 auto 1em; }
 }
 
 @media print {
   /* make sure to print to one page */
   body   { box-shadow: none; }
-  #pre   { padding: 30px; }
+  main   { padding: 0; }
   img    { width: 100px; height: 100px; }
-  h1     { margin-bottom: 0; }
+  h1     { font-size: 1em; }
   footer { display: none; }
 }

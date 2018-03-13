@@ -1,91 +1,102 @@
-<meta name="viewport" content="width=device-width" />
-<link href="http://fonts.googleapis.com/css?family=Headland+One" rel="stylesheet" type="text/css" />
-<link href="normalize.css" rel="stylesheet" />
-<link href="style.css" rel="stylesheet" />
-<script src="marked.js"></script>
-
-<pre>
+<head>
+<meta property="og:title" content="Visnu Pitiyanuvath" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://resume.visnup.com/qr.png" />
+<meta property="og:url" content="https://resume.visnup.com" />
+<meta property="og:description" content="Resume" />
+</head>
+<noscript style="white-space:pre;font:13 monospace">
 
 # ![visnup@gmail.com; 415-305-7168](qr.png) [Visnu Pitiyanuvath][github]
 
-### [Opendoor]
-##### Engineer  Engineering Manager (2014-present)
+[WaffleJS]
+----------
+### Co-creator, organizer (2015-present)
+
+WaffleJS is a meetup about web technology with a side of waffles and karaoke.
+We meet on the first Wednesday of every month. All proceeds go to charity.
+[People love it][wafflejs love].
+
+
+[Opendoor]
+----------
+### Engineer 👉🏼 Engineering Manager 👉🏼 Engineer (2014-present)
 
 Opendoor buys your home from you, so you can skip months of selling and start
 your next chapter.
 
-### [Square]
-##### Engineer (2012-2014)
+
+[Square]
+--------
+### Engineer (2012-2014)
 
 Specifically, the external API you didn't know Square had: The [Square Connect
 API] enables you to build apps for millions of Square merchants—or a custom
 solution for just one.
 
-### [Node.js Knockout]
-##### Co-creator, organizer (2010-2012)
+
+[Node.js Knockout]
+------------------
+### Co-creator, organizer (2010-2012)
 
 Node.js Knockout is a 48-hour hackathon featuring [node.js]. It's an online,
 virtual competition with contestants worldwide. It's been an annual thing.
-[People love it][nko love].
+[People find it fun][nko love].
 
-### [Fortnight Labs]
-##### Partner (2010-2012)
 
-Consulting for startups. We help early-stage startups go from ideas to actual
-released products (web or mobile) very quickly. We're comfortable researching
-and defining a minimal product all the way to building it, using whatever
-technology fits.
+[Fortnight Labs]
+----------------
+### Partner (2010-2012)
 
-### Swivel
-##### Engineer -> CEO (2006-2010)
+Consulting for startups. We helped early-stage startups go from ideas to
+actual released products (web or mobile) very quickly. From research to
+building, we used whatever technology fit. Most prominent client was
+[Sequoia Capital].
+
+
+Swivel
+------
+### Engineer → CEO (2006-2010)
 
 Swivel was an early big-data startup that made it easy to share data and
 charts. Ruby on Rails, mysql backend; JavaScript charting.
 
-#### Guru -> Unicru
-##### Engineer (2000-2005)
 
-At Guru.com, worked on a resume & job matching engine in Java. After being
-acquired by Unicru, built a custom resume parser, using machine learning
-techniques (WEKA).
+Guru → Unicru
+-------------
+### Engineer (2000-2005)
 
-#### [Duke University]
-##### B.S. Electrical Eng. & Computer Science (1996-2000)
+At Guru.com, worked on a resume & job matching engine in Java
+([patent]). After Unicru acquisition, built a custom resume parser,
+using machine learning techniques.
 
-As a post-undergraduate research fellow, co-wrote a 3D, networked game API in
-Java to teach game programming.
+
+[Duke University]
+-----------------
+### B.S. Electrical Eng. & Computer Science (1996-2000)
 
 <footer>[Source], [Revisions]</footer>
 
 [github]: https://github.com/visnup
 
+[WaffleJS]: https://wafflejs.com
+[wafflejs love]: https://twitter.com/search?q=%22wafflejs%22&src=typd
 [Opendoor]: https://www.opendoor.com
 [Square]: https://squareup.com/
 [Square Connect API]: https://connect.squareup.com
 [Node.js Knockout]: http://nodeknockout.com/
-[nko love]: https://twitter.com/i/#!/search/node%20knockout%20OR%20nodeknockout%20OR%20node_knockout%20OR%20nodeko
+[nko love]: https://twitter.com/search?q=node%20knockout%20OR%20nodeknockout%20OR%20node_knockout%20OR%20nodeko
 [node.js]: http://nodejs.org/
 [Fortnight Labs]: http://fortnightlabs.com/
+[Sequoia Capital]: https://www.sequoiacap.com/
 [Swivel]: http://swivel.com/
 [Guru]: http://www.guru.com/
+[patent]: https://patents.google.com/patent/US7555441?oq=visnu+pitiyanuvath
 [Duke University]: http://duke.edu/
 
-[Source]: https://github.com/visnup/resume/tree/gh-pages
-[Revisions]: https://github.com/visnup/resume/commits/gh-pages
+[Source]: https://github.com/visnup/resume
+[Revisions]: https://github.com/visnup/resume/commits
 
-</pre>
-
-<script>
-  (function(d) {
-    var pre = document.body.firstChild
-      , src = pre.innerHTML
-
-    // smartypants-ish
-    src = src
-      .replace(/--/g, '&mdash;')
-      .replace(/'/g, '&rsquo;')
-      .replace(/-&gt;/g, '&rarr;')
-
-    pre.outerHTML = '<div id="pre">' + marked(src) + '</div>'
-  })(document)
-</script>
+</noscript>
+<script src="https://unpkg.com/marked@0.3.17/lib/marked.js"></script>
+<script src="script.js"></script>
