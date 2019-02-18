@@ -9,4 +9,4 @@ while (head.childNodes.length)
 var content = document.querySelector('noscript'),
     src = marked.setOptions({ smartypants: true })(content.innerText || content.innerHTML)
 
-document.body.innerHTML = `<main>${src}</div>`
+document.body.innerHTML = `<main>${src}</main>`
